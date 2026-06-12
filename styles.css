@@ -1,0 +1,129 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    min-height: 100vh; /* Ensures footer stays at the bottom even with less content */
+    display: flex;
+    flex-direction: column; /* Allows footer to be at the bottom */
+}
+
+/* Importing Google Fonts for cute font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* Header styles */
+header {
+    background-color: #74B16E; /* Green background */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center; /* Vertically centers content */
+}
+
+header .header-container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 60px; /* Adjust based on logo size */
+    width: 60px;  /* Ensure it’s a square to form the circle */
+    border-radius: 50%; /* Makes logo circular */
+    object-fit: cover; /* Ensures logo fits nicely inside the circle */
+}
+
+header .cafe-name h1 {
+    margin-left: 15px;
+    font-size: 30px; /* Adjust font size for the cafe name */
+    color: white; /* Adjust the text color as needed */
+    font-family: 'Pacifico', cursive; /* Cute font for the bakery name */
+}
+
+/* Navigation styles */
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main content section styles for Create Account page only */
+.create-account-page .main-content {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    flex-grow: 1; /* Ensures the content takes up available space */
+}
+
+.create-account-page .create-account-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.create-account-page .create-account-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.create-account-page .create-account-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.create-account-page .create-account-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.create-account-page .create-account-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.create-account-page .create-account-form .submit-btn {
+    background-color: #74B16E;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.create-account-page .create-account-form .submit-btn:hover {
+    background-color: #5f9b53; /* Slightly darker green on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #74B16E;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto; /* Ensures footer sticks to bottom of page */
+}
